@@ -76,6 +76,3 @@ You can also use [Mockaroo](https://www.mockaroo.com/) to generate some mock dat
 ```bash
 npm install async
 ```
-
-new line at the end of the file
-outra linha
