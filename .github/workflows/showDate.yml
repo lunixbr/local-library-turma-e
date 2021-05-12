@@ -19,12 +19,12 @@ jobs:
     name: DATE MacOS
     runs-on: mackos-latest
     steps:
-      - name: Step final
-        run: echo Ultimo step
+      - name: Step 1
+        run: date
   job4:
     name: DATE Ubuntu
     runs-on: ubuntu-latest
     steps:
-      - name: Step final
+      - name: Step 1
         run: date
     needs: [job1, job2, job3]
