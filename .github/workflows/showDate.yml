@@ -17,7 +17,7 @@ jobs:
         run: date
   job3:
     name: DATE MacOS
-    runs-on: mackos-latest
+    runs-on: macos-latest
     steps:
       - name: Step 1
         run: date
