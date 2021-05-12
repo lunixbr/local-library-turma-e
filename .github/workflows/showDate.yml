@@ -1,0 +1,30 @@
+name: Show DATE
+on:
+  push:
+    branches: [ main ]
+jobs:
+  job1:
+    name: DATE Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: date
+  job2:
+    name: DATE Windows
+    runs-on: windows-latest
+    steps:
+      - name: Step 1
+        run: date
+  job3:
+    name: DATE MacOS
+    runs-on: mackos-latest
+    steps:
+      - name: Step final
+        run: echo Ultimo step
+  job4:
+    name: DATE Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step final
+        run: date
+    needs: [job1, job2, job3]
